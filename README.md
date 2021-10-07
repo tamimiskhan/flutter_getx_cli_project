@@ -2,15 +2,90 @@
 
 A new Flutter project.
 
-## Getting Started
+Make flutter development easy with GetX and Get CLI tool
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+1. Install
+=============
+flutter pub global activate get_cli
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+2.Create Project
+=================
+get create project 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+a. If no project name is specified it will take the folder name as project name
+b. get create project:get_cli_project [project with name]
+c. get create project:"get cli project"[project name with space]
+
+3. To create the structure
+=============================
+get init
+
+4. Create a page
+==================
+get create page:login [will create controller, view and binding]
+
+
+5. Create Controller
+===================
+a. get create controller:another [By default in Home folder]
+b. get create controller:another on login 
+
+6. Create View
+===================
+a. get create view:another [By default in Home folder]
+b. get create view:another on login 
+
+7. Create Provider
+==================
+get create provider:covid on login
+
+8. Generate localization file
+===============================
+get generate locales assets/locales
+
+9. Generate Model
+=====================
+Will create both provider and model
+
+get generate model on login with assets/models/user.json[By default in Home folder]
+
+To skip the provider generation
+================================
+get generate model on login with assets/models/user.json --skipProvider
+
+
+From URL
+============
+get generate model on login from https://makeup-api.herokuapp.com/api/v1/products.json?brand=marienatie
+
+
+
+
+10. Install a package
+=========================
+get install camera
+
+install several packages
+========================
+get install http path camera 
+
+install with specific version
+============================
+get install path:1.6.4
+
+11. Remove package
+==================
+To remove a package from your project
+======================================
+get remove http
+
+To remove several packages from your project
+============================================
+get remove http path
+
+12. get update [Update the CLI] 
+
+13. get -v [CLI version] 
+
+14. get help
